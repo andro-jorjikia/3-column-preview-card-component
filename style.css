@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap');
+.circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	opacity: 0.2;
+}
+
+.inter-main {
+	font-family: "Big Shoulders", specime;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+.sedan-circle {
+	background: #E38826;
+}
+.suv-circle {
+	background: #006970;
+}
+.luxury-circle {
+	background: #004241;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+	background: #f2f2f2;
+	font-family: 'Lexend Deca', Arial, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	max-width: 900px;
+	margin: 40px auto;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+	background: none;
+}
+
+.card {
+	flex: 1;
+	padding: 40px 32px 32px 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.card .icon {
+	margin-bottom: 32px;
+}
+
+.card h2 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	margin: 0 0 24px 0;
+	color: #fff;
+}
+
+.card p {
+	color: #fff;
+	opacity: 0.75;
+	font-size: 1rem;
+	margin-bottom: 40px;
+	line-height: 1.6;
+}
+
+.card.sedan {
+	background: #E38826;
+}
+.card.suv {
+	background: #006970;
+}
+.card.luxury {
+	background: #004241;
+}
+
+.learn-more {
+	margin-top: auto;
+	display: inline-block;
+	padding: 12px 32px;
+	border: 2px solid #fff;
+	border-radius: 24px;
+	background: transparent;
+	color: #fff;
+	font-family: 'Lexend Deca', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: background 0.2s, color 0.2s;
+	cursor: pointer;
+}
+
+.card.sedan .learn-more {
+	color: #E38826;
+	background: #fff;
+	border-color: #fff;
+}
+.card.sedan .learn-more:hover {
+	background: transparent;
+	color: #fff;
+}
+
+.card.suv .learn-more {
+	color: #006970;
+	background: #fff;
+	border-color: #fff;
+}
+.card.suv .learn-more:hover {
+	background: transparent;
+	color: #fff;
+}
+
+.card.luxury .learn-more {
+	color: #004241;
+	background: #fff;
+	border-color: #fff;
+}
+.card.luxury .learn-more:hover {
+	background: transparent;
+	color: #fff;
+}
+
+@media (max-width: 900px) {
+	.container {
+		flex-direction: column;
+		max-width: 340px;
+	}
+	.card {
+		padding: 32px 24px 24px 24px;
+		align-items: flex-start;
+	}
+	.card:not(:last-child) {
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+	}
+}
